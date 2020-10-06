@@ -1,0 +1,21 @@
+.header {
+  background-color: $color-primary;
+  height: 100px;
+}
+.header__title {
+  text-align: center;
+  h1 {
+    @include font($size: 4rem);
+    padding: 30px;
+    margin: 0;
+  }
+  i {
+    margin: 0 10px;
+  }
+  @include media-mobile-small {
+    h1 {
+      @include font($size: 3rem);
+      padding: 35px;
+    }
+  }
+}

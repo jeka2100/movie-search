@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color-primary;
+  height: 70px;
+  &.keyboard {
+    margin: 0 0 260px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  height: 100%;
+}
+
+.footer__rsschool, .footer__github {
+  @include font($size: 2rem);
+  @include media-mobile-small {
+    @include font($size: 1.4rem);
+  }
+}
+
+.github__link {
+  text-decoration: none;
+  color: black;
+  &:visited {
+    color: black;
+  }
+}

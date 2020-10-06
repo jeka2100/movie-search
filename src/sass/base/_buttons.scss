@@ -1,0 +1,67 @@
+.searchForm__button {
+  height: 50px;
+  width: 50px;
+  i {
+    font-size: 25px;
+  }
+  @include media-mobile-big {
+    width: 100px;
+  }
+}
+
+.searchForm__clear {
+  position: relative;
+  right: 95px;
+  top: 4px;
+  cursor: pointer;
+  i {
+    font-size: 30px;
+  }
+  @include media-mobile-big {
+    position: absolute;
+    top: 185px;
+    right: 71px;
+  }
+  @include media-mobile-small {
+    top: 177px;
+    right: 65px;
+  }
+}
+
+.searchForm__keyboard {
+  position: relative;
+  right: 168px;
+  top: 4px;
+  cursor: pointer;
+  i {
+    font-size: 30px;
+  }
+  @include media-laptop-small {
+    display: none;
+  }
+}
+
+.searchForm__searching {
+  position: relative;
+  right: 255px;
+  top: 3px;
+  &.hidden {
+    display: none;
+  }
+  @include media-laptop-small {
+    top: 3px;
+    right: 167px;
+  }
+  @include media-tablet {
+    top: 3px;
+    right: 167px;
+  }
+  @include media-mobile-big {
+    top: -50px;
+    right: -39px;
+  }
+  @include media-mobile-small {
+    top: -49px;
+    right: -18px;
+  }
+}

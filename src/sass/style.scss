@@ -1,0 +1,21 @@
+//Abstract
+@import './abstract/mixins';
+@import './abstract/placeholders';
+@import './abstract/constants';
+
+//Base
+@import './base/normalize';
+@import './base/base';
+@import './base/buttons';
+
+//Layouts
+@import './layouts/header';
+@import './layouts/forms';
+@import './layouts/footer';
+@import './layouts/filmsContainer';
+
+//Components
+@import './components/carousel';
+@import './components/movieCards';
+@import './components/virtualKeyboard';
+@import './components/modal';

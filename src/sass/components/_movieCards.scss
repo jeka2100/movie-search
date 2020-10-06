@@ -1,0 +1,38 @@
+.film-card {
+  background-color: $color-primary;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.film-card__title {
+  color: black;
+  h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 15px 10px 0;
+    @include font($size: 2rem);  
+  }
+}
+
+.film-card__image {
+  width: 90% !important;
+  display: inline-block !important;
+  height: 320px;
+  background-size: cover;
+}
+
+.film-card__year, .film-card__rating, .film-card__about {
+  @include font($size: 2rem);
+  margin: 10px;
+}
+
+.film-card__year, .film-card__rating {
+  display: inline-block;
+}
+
+.film-card__about {
+  padding: 0 0 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}

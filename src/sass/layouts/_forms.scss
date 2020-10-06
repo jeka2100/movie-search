@@ -1,0 +1,30 @@
+.searchForm {
+  @include media-mobile-big {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.searchForm__text {
+  @include font($size: 2.5rem, $weight: normal);
+  @include media-mobile-small {
+    @include font($size: 1.7rem, $weight: normal);
+  }
+}
+.searchForm__input {
+  margin: 10px 0;
+  padding: 10px 100px 10px 10px;;
+  width: calc(100% - 160px);
+  height: 50px;
+  @include font($size: 2.5rem, $weight: normal);
+  @include media-mobile-big {
+    width: 100%;
+  }
+}
+
+.filmsContainer__errors {
+  font-size: 2.5rem;
+  color: red;
+  text-align: center;
+}

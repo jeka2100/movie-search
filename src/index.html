@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/sitedecor/film-solid.ico" type="image/x-icon">
+  <title>Movie Search</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__title">
+      <h1><i class="fas fa-film"></i>Movie Search</h1>
+    </div>
+  </header>  
+  <main>
+    <div class="wrapper">
+      <div class="filmsContainer">
+        <form class="searchForm">
+          <label class="searchForm__text" for="formInput">What's your favorite movie?</label>
+          <input class="searchForm__input" id="formInput" type="text" placeholder="Search movie" autocomplete="off" autofocus>
+          <button class="searchForm__button" type="submit"><i class="fas fa-search"></i></i></button>
+          <span class="searchForm__clear"><i class="fas fa-times"></i></span>
+          <span class="searchForm__keyboard"><i class="far fa-keyboard"></i></span>
+          <span class="searchForm__searching hidden"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+          </span>
+        </form>
+        <div class="filmsContainer__errors"></div>
+        <div class="owl-carousel owl-theme">
+        </div>
+      </div>
+   </div> 
+   <div class="virtualKeyboard hidden">
+    <div class="wrapper">
+      <div class="virtualKeyboardContainer"></div>
+    </div>
+  </div>
+  <div class="overlay hidden">
+    <div class="modal"></div>
+  </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__container">
+        <div class="footer__rsschool"><i class="fas fa-graduation-cap"></i> RSSchool 2020</div>
+        <div class="footer__github"><i class="fab fa-github"></i><a class="github__link" href="https://github.com/jeka2100" target="_blank"> jeka2100</a></div>    
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+<script src="https://kit.fontawesome.com/0daf11026c.js" crossorigin="anonymous"></script>
+</html>
