@@ -1,6 +1,6 @@
 # Movie search
 
-## **English for kids** is an application that displays information about movies
+## **Movie search** is an application that displays information about movies
 
 The site displays information about films at the request of the user. For each film, you can see its detailed information and poster. You can also go to the movie page on the IMDB website.
 
